@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>i think i drank too much...</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bulma.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="">
+            <div class="columns">
+                <div class="column">
+                    <div class="hero is-fullheight">
+                        <div class="hero-body">
+                           <div class="inputs-container">
+                            <p class="title">i think i drank too much...</p>
+                            <p class="text">See how much you should drink, or whether you're already over the limit.</p>
+                            <hr>
+                            <p class="subtitle">Sex</p>
+                            <div class="sex-input">
+                                <div class="male-option" id="maleOptionBorder">
+                                    <div class="sex-option" id='male'>M</div>
+                                </div>
+                                <div class="female-option" id="femaleOptionBorder">
+                                    <div class="sex-option" id='female'>F</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <p class="subtitle">Weight (Kg)</p>
+                            <input type='text' class="weight-input" id="weight" placeholder="Whole numbers please..."></input>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content-box">
+                        <div class="content-container">
+                            <h1 class="title content-title">Let's see then.</h1>
+                            <p class="content-text">Your information will appear after you've filled in the form to the left. Remember, you’re special! Take this information with a grain of salt as your tolerance to alcohol can vary based on a number of factors. <a href="">Click here for more information.</a></p>
+                            <hr style="background:#262A41; ">
+                            <div id="disappearingAct">
+                                <p class="subtitle content-subtitle">At a glance</p>
+                                <div class="columns">
+                                    <div class="column">
+                                        <img src="img/can-blue.svg" class="can-image" alt="">
+                                        <p class="can-number" id="lowerLimit"></p>
+                                        <p class="subtitle blue-title">Effects begin</p>
+                                    </div>
+                                    <div class="column">
+                                        <img src="img/can-purple.svg" class="can-image" alt="">
+                                        <p class="can-number" id="nauseaLimit"></p>
+                                        <p class="subtitle purple-title">Nausea occurs</p>
+                                    </div>
+                                    <div class="column">
+                                        <img src="img/can-red.svg" class="can-image" alt="">
+                                        <p class="can-number" id="upperLimit"></p>
+                                        <p class="subtitle red-title">Upper limit</p>
+                                    </div>
+                                </div>
+                                <p class="subtitle content-subtitle">Relative to population</p>
+                                <div class="total-measure" id="totalMeasure">
+                                    <div class="user-measure" id="userMeasure"></div>
+                                </div>
+                                <div class="tooltip" id="tooltip">
+                                    <span class="tooltiptext" id="tooltiptext"><strong id="percentTag" style="color:white;"></strong><br><span id="aboveBelow"></span></span>
+                                </div>
+                                <p class="content-text" style="margin-top:10px; margin-bottom:30px;">Calculated based on the raise in Blood Alcohol Content caused by one 500ml beverage at 4.5% alc., one and a half shots of 40% 80-proof spirit, or approx. 19g of ethanol.</p>
+                                <p class="subtitle content-subtitle" style="margin-bottom:10px;">In-depth information</p>
+                                <p class="content-text">The following is an extensive look at the effects you should be feeling past a certain point. Base your consumption on the following information rather than the basic information above.</p>
+                                <p class="subtitle blue-title" id="pOne" style="text-align: left; margin-top:20px; margin-bottom:10px; opacity: 1; font-size:18px;">Between 1-3 cans or shots 😊</p>
+                                <p class="content-text">There you go! You might start feeling warm and more confident. On the upper end of this stage you might start to forget things. <br><br>You should feel the following symptoms:
+                                    <ul>
+                                        <li>Slight loss of coordination</li>
+                                        <li>Slight euphoric feeling</li>
+                                        <li>Gain in confidence</li>
+                                        <li>Relaxed, thought depressant effects of alcohol are not predominant.</li>
+                                    </ul> </p>
+                                <p class="subtitle purple-title" id="pTwo" style="text-align: left; margin-top:20px; margin-bottom:10px; opacity: 1; font-size:18px;">Between 3-6 cans or shots 😄</p>
+                                <p class="content-text">Alright, slow it down there. Your speech is beginning to slur and you're not thinking right. You're probably going to be sick soon. <br><br> You should be feeling:
+                                    <ul>
+                                        <li>Significant to gross loss of motor control</li>
+                                        <li>Speech may be slurred</li>
+                                        <li>Balance, peripheral vision, reaction time, and hearing will be impaired.</li>
+                                        <li>Euphoria reduces into dysphoria (feeling really unwell).</li>
+                                    </ul>
+                                </p>
+                                <p class="subtitle red-title" id="pThree" style="text-align: left; margin-top:20px; margin-bottom:10px; opacity: 1; font-size:18px;">Between 6-9 cans or shots 🤮</p>
+                                <p class="content-text">Stop now if you know what's good for you. Well, you really should have stopped a while ago. You're falling over, you can barely talk, and you're probably ruining a babysitters night. <br><br> Find somewhere safe, have someone watch you, and for the love of god, drink some water. You're going to have some headache in the morning. <br><br> at this point you'll be feeling:
+                                <ul>
+                                    <li>Needs assistance walking</li>
+                                    <li>Total mental confusion</li>
+                                    <li>Dysphoria with nausea or vomiting</li>
+                                    <li>Possible blackout</li>
+                                </ul></p>
+                                <p class="subtitle black-title" id="pFour" style="text-align: left; margin-top:20px; margin-bottom:10px; opacity: 1; font-size:18px;">After 9 cans or shots 😵</p>
+                                <p class="content-text">You'll probably be keeled over a toilet or passed out at this point. You are now medically considered to have severe alcohol poisoning. Hope to god you have good friends. Seek medical attention if needs be. <br><br> If you can feel anything, you'll be feeling this: <ul>
+                                    <li>Alcohol Poisoning</li>
+                                    <li>Loss of conciousness</li>
+                                </ul></p>
+                                <hr style="background:#262A41; ">
+                                <p class="subtitle black-title" style="text-align: left; margin-top:20px; margin-bottom:10px; opacity: 1; font-size:18px;">Further information</p>
+                                <p class="content-text">All "cans" on this page refer to standard 500ml Irish Beverage containers of 4.5% alcohol. This is equal to about 19g of ethanol per serving. One shot of 40% alcohol contains around 12g of ethanol. To make calculations for shots instead, multiply the number of cans by a factor of 1.5. <br><br><strong>Disclaimer:</strong> I take no responsibility for your drinking as a result of the information on this page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <script src="scripts/butthole.js"></script>
+    </body>
+</html>
